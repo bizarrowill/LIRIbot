@@ -15,10 +15,15 @@ var client = new Twitter(keys.twitter);
 // * `my-tweets`
 
 
-var params = {screen_name: 'nodejs', count: 20};
+var params = {screen_name: 'BizarroTest', count: 20};
 client.get('statuses/user_timeline', params, function(error, tweets, response) {
  if (!error) {
-   console.log("here are my recent tweets! ", tweets);
+   console.log("Here's the latest: ");
+				console.log("");
+				tweets.forEach(function(t) {
+				    console.log(t.text);
+					console.log("");
+				});
  }
 });
 
@@ -39,4 +44,4 @@ console.log(data);
 
 
 
-client.get(path, params, callback);
+// client.get(path, params, callback);
