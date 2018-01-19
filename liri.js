@@ -6,14 +6,6 @@ require("dotenv").config();
 var functions = require('./assets/functions.js');
 var userInput = (process.argv[2]);
 
-//   require keys 
-// var keys = require('./keys.js');
-// var Spotify = require('node-spotify-api');
-
-
-// var spotify = new Spotify(keys.spotify);
-
-
 
 // * `my-tweets`
 

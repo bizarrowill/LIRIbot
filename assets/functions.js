@@ -25,6 +25,13 @@ module.exports = {
                 }
                 });
 
+    },
+
+    spotify: function(myInput) {
+            var Spotify = require('node-spotify-api');
+            var keys = require('../keys.js');
+            var spotify = new Spotify(keys.spotify);
+            
     }
 
 
