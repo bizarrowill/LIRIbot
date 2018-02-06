@@ -19,13 +19,13 @@ if(userInput === "my-tweets") {
 // * `spotify-this-song`
 
  
-// spotify.search({ type: 'track', query: 'The Sign' }, function(err, data) {
-//   if (err) {
-//     return console.log('Error occurred: ' + err);
-//   }
+spotify.search({ type: 'track', query: 'The Sign' }, function(err, data) {
+  if (err) {
+    return console.log('Error occurred: ' + err);
+  }
  
-// console.log(data); 
-// });
+console.log(data); 
+});
 
 // * `movie-this`
 
